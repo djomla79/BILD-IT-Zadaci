@@ -2,8 +2,6 @@ package zadaci_26_07_2015;
 
 import java.util.Scanner;
 
-import sun.security.util.Password;
-
 public class ValidanPassword {
 
 	public static void main(String[] args) {

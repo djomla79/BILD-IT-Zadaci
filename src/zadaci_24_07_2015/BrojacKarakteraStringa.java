@@ -31,7 +31,7 @@ public class BrojacKarakteraStringa {
 			brojac++;  // i broji koliko karaktera uneseni string ima
 		}
 		// ispis u konzolu
-		System.out.println("Unesena rijec ima: " + brojac + " karaktera.");
+		System.out.println("\nUnesena rijec ima: " + brojac + " karaktera.");
 		return brojac;  // vraca broj karaktera u stringu
 	}
 }
