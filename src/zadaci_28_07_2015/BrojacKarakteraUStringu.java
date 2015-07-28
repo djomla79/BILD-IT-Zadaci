@@ -14,11 +14,15 @@ public class BrojacKarakteraUStringu {
 		 */
 		Scanner input = new Scanner(System.in);
 		
-		System.out.print("Unesite jednu rijec: ");
+		System.out.print("Unesite rijec: ");
 		// unos rijeci
 		String rijec = input.next();
+		
+		System.out.print("Unesite slovo: ");
+		// unos slova
+		char slovo = input.next().charAt(0);
 		// pozivanje metode
-		System.out.println("Slovo 'e' se u unesenoj rijeci ponavlja " + count(rijec, 'e') + " puta.");
+		System.out.println("Slovo " + slovo + " se u unesenoj rijeci ponavlja " + count(rijec, slovo) + " puta.");
 		
 		input.close();
 	}

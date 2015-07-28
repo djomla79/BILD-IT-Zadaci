@@ -20,7 +20,7 @@ public class SubstringStringa {
 		System.out.print("Unesite drugu rijec: ");
 		// unos druge rijeci
 		String str2 = input.next();
-		// ako je drugi string veci od prvog, mijenjamo im mjesta
+		
 		while(str2.length() > str1.length()) {  // petlja se 'vrti' dok drugi string ima vise karaktera od prvog
 			System.out.println("Greska, druga rijec je veca od prve!");
 			System.out.println("Unesite drugu rijec ponovo: ");
