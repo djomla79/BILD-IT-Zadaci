@@ -1,6 +1,7 @@
 package zadaci_29_07_2015;
 
 import java.text.SimpleDateFormat;
+import java.util.Calendar;
 import java.util.Date;
 
 public class CurrentTimeMillis {
@@ -18,6 +19,8 @@ public class CurrentTimeMillis {
 		SimpleDateFormat trenutniDatum = new SimpleDateFormat("dd. MMM, yyyy HH:mm:ss");  // odredjivanje formata trenutnog vremena
 		System.out.println("Trenutni datum i vrijeme: " + trenutniDatum.format(datum));   // ispis trenutnog vremena u odredjenom formatu
 		
+		Calendar cal = Calendar.getInstance();                                            // klasa Calendar
+		System.out.println("Trenutni datum i vrijeme: " + cal.getTime());	              // instancom cal pozivamo metodu koja racuna trenutni datum i vrijeme
 	}
 
 }
