@@ -34,7 +34,7 @@ public class NajveciNajmanjiZajednickiDjelilac {
 		// petlja u kojoj uzimamo parametre
 		while(broj <= n && broj <= m) {          // petlja se 'vrti' dok se uslov ne ispuni
 			if(n % broj == 0 && m % broj == 0) { // ako su oba unesena broja djeljivi sa brojem
-				nzd = broj;                      // najmanji zajednicki djelilac postaje taj broj
+				nzd = broj;                      // najveci zajednicki djelilac postaje taj broj
 			}
 			broj++;                              // broj se povecava za jedan
 		}
