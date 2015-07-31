@@ -29,11 +29,14 @@ public class ReverseIsPalindrome {
 		
 		String broj = Integer.toString(number); // pretvaranje unesenog broja u string
 		String suma = "";
+		int brojObrnuto = 0;
 		// petlja koja ide kroz string naopako
 		for(int i=broj.length()-1; i>=0; i--) {
 			suma += broj.charAt(i);  // unos karaktera iz stringa u novi prazan string
 		}
-		int brojObrnuto = Integer.parseInt(suma);  // pretvaranje dobijenog obrnutog stringa u integer
+		
+		brojObrnuto = Integer.parseInt(suma);  // pretvaranje dobijenog obrnutog stringa u integer
+		
 		return brojObrnuto;                        // vracanje pretvorenog broja (obrnutog naopako)
 	}
 	/** Metoda koja provjerava da li je uneseni broj Palindrome */
