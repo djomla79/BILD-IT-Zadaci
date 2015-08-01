@@ -13,7 +13,7 @@ public class SumaBrojeva {
 		for(int i=1; i<100; i = i+2) {  // petlja koja ide od 1, 3, 5,..,99 (neparni)
 			suma += (double)i / (i+2);  // suma brojeva i / i+2, 1/3, 3/5,...,97/99
 		}
-		System.out.println(suma);       // ispis ukupne sume
+		System.out.println("Ukupna suma: " + suma);       // ispis ukupne sume
 	}
 
 }
