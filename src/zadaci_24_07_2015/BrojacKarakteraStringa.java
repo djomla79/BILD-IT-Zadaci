@@ -4,6 +4,7 @@ import java.util.Scanner;
 
 public class BrojacKarakteraStringa {
 
+	private static char ch;
 	public static void main(String[] args) {
 		/*
 		 Napisati metodu koja broji slova u stringu. Metoda treba koristiti sljedeæi header:
@@ -27,8 +28,9 @@ public class BrojacKarakteraStringa {
 		int brojac = 0;
 		// petlja koja prolazi kroz string
 		for(int i=0; i<s.length(); i++) {
-			char ch = s.charAt(i);
+			ch = s.charAt(i);
 			brojac++;  // i broji koliko karaktera uneseni string ima
+			System.out.print(ch);
 		}
 		// ispis u konzolu
 		System.out.println("\nUnesena rijec ima: " + brojac + " karaktera.");
