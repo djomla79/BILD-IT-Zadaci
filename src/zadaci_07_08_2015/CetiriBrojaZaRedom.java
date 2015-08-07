@@ -50,6 +50,7 @@ public class CetiriBrojaZaRedom {
 		for(int i=0; i<values.length; i++) { // za sve elemente niza
 			if(broj != values[i]) {          // ako je prvi broj u nizu razlicit od sledeceg unesenog
 				broj = values[i];            // broj postaje taj novi uneseni broj
+				brojac = 1;                  // brojac se resetuje na jedan
 			} else {                         // a ako su brojevi isti
 				brojac++;                    // brojac broji koliko se puta zaredom ponavlja isti broj
 				if(brojac == 4) {            // ako se ponavlja 4 puta za redom
