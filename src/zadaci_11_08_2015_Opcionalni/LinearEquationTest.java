@@ -29,8 +29,7 @@ public class LinearEquationTest {
 			System.out.println("Jednacina nema rjesenja.");               // ispis u konzolu
 		}
 		
-		input.close();
-		
+		input.close();	
 	}
 }
 /** Klasa LinearEquation */

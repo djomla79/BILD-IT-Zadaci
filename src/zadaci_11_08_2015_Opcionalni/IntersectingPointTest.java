@@ -60,9 +60,8 @@ class IntersectingPoint {
 		this.x4 = x4;
 		this.y4 = y4;
 }
-/** Metoda koja prima matricu sa tackama dvije linije
- * izracunava matricu i tacke za unesene tacke
- * i vraca tacke presjeka za dobijenu matricu i tacke */
+/** Metoda koja racuna elemente matrice i tacke
+ * kojima izracunava i vraca LE za unesene tacke */
 public double[] getIntersectingPoint() {
 	
 	double[][]a = new double[2][2];
@@ -102,6 +101,7 @@ public double[] linearEquation() {
 	double y = (b[1]*a[0][0] - b[0]*a[1][0]) / (a[0][0]*a[1][1] - a[0][1]*a[1][0]); // racunanje y po formuli
 	
 	double[] xy = {x, y};                                   // ubacivanje dobijenih vrijednosti u niz
+	
 	return xy;                                              // vracanje vrijednosti niza
 	
 }
