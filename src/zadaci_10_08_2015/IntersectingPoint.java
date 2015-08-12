@@ -36,7 +36,7 @@ public class IntersectingPoint {
 
 		if (xy == null) {                              // ako su linije paralelne, LE nema rjesenja
 			System.out.println("Linije su paralelne.");// ispis u konzolu
-		} else {                                       // ako linije nisu paralelne, LE ima rjesenje,
+		} else {                                       // ako linije nisu paralelne, LE ima rjesenje
 			System.out.print("Tacke presjeka linija za unesene tacke su: " + xy[0] + " " + xy[1]);// ispis u konzolu
 		}
 		
