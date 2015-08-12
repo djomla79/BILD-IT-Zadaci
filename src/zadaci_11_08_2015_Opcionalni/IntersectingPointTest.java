@@ -64,7 +64,7 @@ class IntersectingPoint {
  * kojima izracunava i vraca LE za unesene tacke */
 public double[] getIntersectingPoint() {
 	
-	double[][]a = new double[2][2];
+	double[][] a = new double[2][2];
 	double[] b = new double[2];
 	
 	a[0][0] = y1 - y2;                    // dobijanje prvog elementa matrice po formuli
@@ -84,13 +84,13 @@ public double[] getIntersectingPoint() {
 	b[0] = (y1 - y2)*x1 - (x1 - x2)*y1;   // racunanje tacaka po formuli
 	b[1] = (y3 - y4)*x3 - (x3 - x4)*y3;
 	
-	return linearEquation();              // vraca linear equation za izracunatu matricu i tacke
+	return linearEquation(a, b);              // vraca linear equation za izracunatu matricu i tacke
 }
 /** Metoda koja prima matricu i niz elem. i vraca niz sa izracunatim vrijednostima */
-public double[] linearEquation() {
+public double[] linearEquation(double a[][], double b[]) {
 	
-	double[][] a = new double[2][2];
-	double[] b = new double[2];
+	a = new double[2][2];
+	b = new double[2];
 	
 	if(a[0][0]*a[1][1] - a[0][1]*a[1][0] == 0) {            // ako je po formuli ispunjen uslov
 		System.out.println("Jednacina nema rjesenja.");     // ispis u konzolu
