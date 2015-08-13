@@ -14,7 +14,7 @@ public class BoundingRenctangle {
 		 Write a test program that prompts the user to enter five points
 		 and displays the bounding rectangle’s center, width, and height.
 		 Here is a sample run: Enter five points: 1.0 2.5 3 4 5 6 7 8 9 10
-		 The bounding rectangle's center (5.0, 6.25), width 8.0, height 7.5
+		 The bounding rectangle's center (5.0, 6.25), width 8.0, height 7.5 
 		 */
 		Scanner input = new Scanner(System.in);
 		
