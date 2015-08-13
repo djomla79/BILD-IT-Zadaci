@@ -20,6 +20,7 @@ public class MyRectangle2DTest {
 		 r1.contains(new MyRectangle2D(4, 5, 10.5, 3.2)), and r1.overlaps(new MyRectangle2D(3, 5, 2.3, 5.4)). 
 		 */
 		 MyRectangle2D r1 = new MyRectangle2D(2, 2, 5.5, 4.9);  // kreiranje objekta MR2D
+		 
 		 r1.getArea();                                          // pozivanje metode za ispis povrsine
 		 r1.getPerimeter();                                     // pozivanje metode za ispis obima
 		 r1.contains(3, 3);                                     // poz. metode, da li se tacke nalaze u p-ugaoniku
@@ -89,6 +90,7 @@ class MyRectangle2D {
     /** Metoda koja provjerava da li se
      * unesene tacke nalaze u originalnom p-ugaoniku */
     public boolean contains(double x, double y) {
+    	/* Po formuli ako je uslov ispunjen, vraca true, ako nije vraca false */
     	if((Math.abs(2*(x-this.x)) > height || Math.abs(2*(y - this.y)) > width)) {
     		System.out.println("Unesene tacke se nalaze u pravougaoniku.");
     		return true;
@@ -100,6 +102,7 @@ class MyRectangle2D {
     /** Metoda koja provjerava da li se uneseni
      * p-ugaonik nalazi u originalnom p-ugaoniku */
     public boolean contains(MyRectangle2D r) {
+    	/* Po formuli ako je uslov ispunjen, vraca true, ako nije vraca false */
     	if((Math.abs(2*(r.getX()-this.x)) > height || Math.abs(2*(r.getY() - this.y)) > width)) {
     		System.out.println("Uneseni pravougaonik se nalazi u originalnom pravougaoniku.");
     		return true;
@@ -111,6 +114,7 @@ class MyRectangle2D {
     /** Metoda koja provjerava da li se uneseni
      * i originalni p-ugaonik presijecaju */
     public boolean overlaps(MyRectangle2D r) {
+    	/* Po formuli ako je uslov ispunjen, vraca true, ako nije vraca false */
     	if((Math.abs(2*(r.getX()-this.x)) >= height || Math.abs(2*(r.getY() - this.y)) >= width)) {
     		System.out.println("Uneseni pravougaonik se presjeca sa originalnim pravougaonikom.");
     		return true;

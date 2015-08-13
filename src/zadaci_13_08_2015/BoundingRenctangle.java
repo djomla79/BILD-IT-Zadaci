@@ -133,6 +133,7 @@ class MyRectangle2 {
     /** Metoda koja provjerava da li se
      * unesene tacke nalaze u originalnom p-ugaoniku */
     public boolean contains(double x, double y) {
+    	/* Po formuli ako je uslov ispunjen, vraca true, ako nije vraca false */
     	if((Math.abs(2*(x-this.x)) > height || Math.abs(2*(y - this.y)) > width)) {
     		System.out.println("Unesene tacke se nalaze u pravougaoniku.");
     		return true;
@@ -144,6 +145,7 @@ class MyRectangle2 {
     /** Metoda koja provjerava da li se uneseni
      * p-ugaonik nalazi u originalnom p-ugaoniku */
     public boolean contains(MyRectangle2 r) {
+    	/* Po formuli ako je uslov ispunjen, vraca true, ako nije vraca false */
     	if((Math.abs(2*(r.getX()-this.x)) > height || Math.abs(2*(r.getY() - this.y)) > width)) {
     		System.out.println("Uneseni pravougaonik se nalazi u originalnom pravougaoniku.");
     		return true;
@@ -155,6 +157,7 @@ class MyRectangle2 {
     /** Metoda koja provjerava da li se uneseni
      * i originalni p-ugaonik presijecaju */
     public boolean overlaps(MyRectangle2 r) {
+    	/* Po formuli ako je uslov ispunjen, vraca true, ako nije vraca false */
     	if((Math.abs(2*(r.getX()-this.x)) >= height || Math.abs(2*(r.getY() - this.y)) >= width)) {
     		System.out.println("Uneseni pravougaonik se presjeca sa originalnim pravougaonikom.");
     		return true;

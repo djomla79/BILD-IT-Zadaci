@@ -21,14 +21,17 @@ public class MyDateTest {
 		 For example, if the elapsed time is 561555550000 milliseconds, the year is 1987, the month is 9, and the day is 18. 
 		 You may use the GregorianCalendar class.)
 		 */
-		
-		MyDate d1 = new MyDate();             // kreiranje objekata MD i pozivanje metoda za ispis datuma u konzolu
+		/* kreiranje objekata MD i pozivanje metoda za ispis datuma u konzolu */
+		MyDate d1 = new MyDate();
 		System.out.println("Danasnji datum: "+ d1.getYear() + "/" + d1.getMonth() + "/" + d1.getDay());
+		
 		MyDate d2 = new MyDate(34355555133101L);
 		System.out.println("Datum: " + d2.getYear() + "/" + d2.getMonth() + "/" + d2.getDay());
+		
 		MyDate d3 = new MyDate();
 		d3.setDate(561555550000L);
 		System.out.println("Datum: " + d3.getYear() + "/" + d3.getMonth() + "/" + d3.getDay());
+		
 		MyDate d4 = new MyDate(2015, 11, 11);
 		System.out.println("Datum: " + d4.getYear() + "/" + d4.getMonth() + "/" + d4.getDay());
 		

@@ -19,13 +19,16 @@ public class Circle2DTest {
 		 displays its area and perimeter, and displays the result of c1.contains(3, 3),
 		 c1.contains(new Circle2D(4, 5, 10.5)), and c1.overlaps(new Circle2D(3, 5, 2.3)). 
 		 */
+		
 		Circle2D c1 = new Circle2D(2, 2, 5.5);          // kreiranje objekta C2D
 		                                                // pozivanje metoda za povrsinu i obim kruga i ispis u konzolu
 		System.out.println("Povrsina kruga je: " + c1.getArea() + "\nObim kruga je: " + c1.getPerimeter());
 		
-		 System.out.println(c1.contains(3, 3));         // pozivanje metode, da li se tacka nalazi u krugu
-		 System.out.println(c1.contains(new Circle2D(4, 5, 10.5))); // da li se krug nalazi unutar drugog kruga
-		 System.out.println(c1.overlaps(new Circle2D(3, 5, 2.3)));  // da li se krugovi presjecaju
+		System.out.println(c1.contains(3, 3));         // pozivanje metode, da li se tacka nalazi u krugu
+		
+		System.out.println(c1.contains(new Circle2D(4, 5, 10.5))); // da li se krug nalazi unutar drugog kruga
+		
+		System.out.println(c1.overlaps(new Circle2D(3, 5, 2.3)));  // da li se krugovi presjecaju
 		
 	}
 }
@@ -72,10 +75,10 @@ class Circle2D {
 		double suma = Math.pow(x - this.x, 2) + Math.pow(y - this.y, 2);
 		double dis = Math.sqrt(suma);
 		
-		if (Math.sqrt(radius) >= dis) {
+		if (Math.sqrt(radius) >= dis) {                       // po formuli ako je uslov ispunjen, vraca true
 			System.out.println("Tacka se nalazi u krugu.");
 			return true;
-		} else {
+		} else {                                              // a ako nije, vraca false
 			System.out.println("Tacka se ne nalazi u krugu.");
 			return false;
 		}
@@ -87,15 +90,15 @@ class Circle2D {
 		double dis = Math.sqrt(suma);
 		double rad1 = Math.abs(Math.sqrt(radius) - Math.sqrt(circle.radius));
 		
-		if (rad1 >= dis) {
+		if (rad1 >= dis) {                                            // po formuli ako je uslov ispunjen, vraca true
 			System.out.println("Krug se nalazi unutar drugog kruga.");
 			return true;
-		} else {
+		} else {                                                      // ako nije, vraca false
 			System.out.println("Krug se ne nalazi unutar drugog kruga.");
 			return false;
 		}
 	}
-	/** Metoda koja vraca da li je */
+	/** Metoda koja vraca da li se uneseni i originalni krug presjecaju */
 	public boolean overlaps(Circle2D circle) {
 		
 		double suma = Math.pow(circle.x - this.x, 2) + Math.pow(circle.y - this.y, 2);
@@ -103,10 +106,10 @@ class Circle2D {
 		double rad1 = Math.abs(Math.sqrt(radius) - Math.sqrt(circle.radius));
 		double rad2 = Math.abs(Math.sqrt(radius) + Math.sqrt(circle.radius));
 		
-		if (rad1 < dis && dis < rad2) {
+		if (rad1 < dis && dis < rad2) {                  // po formuli ako je uslov ispunjen, vraca true
 			System.out.println("Krugovi se presjecaju.");
 			return true;
-		} else {
+		} else {                                         // ako nije, vraca false
 			System.out.println("Krugovi nemaju dodirnih tacaka.");
 			return false;
 		}

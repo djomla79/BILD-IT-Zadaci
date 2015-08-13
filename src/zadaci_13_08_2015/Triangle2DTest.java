@@ -21,13 +21,13 @@ public class Triangle2DTest {
 		 and t1. overlaps(new Triangle2D(new MyPoint(2, 5.5), new MyPoint(4, -3), MyPoint(2, 6.5))). 
 		 */
 		boolean isTrue;
-		
-		Triangle2D t1 = new Triangle2D(new MyPoint(2.5, 2), new MyPoint(4.2, 3), new MyPoint(5, 3.5)); // kreiranje objekta T2D
+		/* Kreiranje objekta T2D i pozivanje metoda za dobijanje povrsine i obima trougla */
+		Triangle2D t1 = new Triangle2D(new MyPoint(2.5, 2), new MyPoint(4.2, 3), new MyPoint(5, 3.5));
 		t1.getArea();
 		t1.getPerimeter();
-		
+		/* Provjeravanje da li trougao sadrzi date tacke */
 		isTrue = t1.contains(new MyPoint(3, 3));
-		
+		/* Provjeravanje da li trougao sadrzi drugi trougao */
 		isTrue = t1.contains(new Triangle2D(new MyPoint(2.9, 2), new MyPoint(4, 1), new MyPoint(1, 3.4)));
 		
 		if(isTrue = true) {                                             // ako se uslov ispuni
@@ -117,7 +117,7 @@ class Triangle2D {
 		double s;
 		double a1, a2, a3;
 		
-		/** Racunanje povrsine tri trougla za unesene tacke p */
+		/* Racunanje povrsine tri trougla za unesene tacke p */
 		str1 = p1.distance(p);
 		str2 = p1.distance(p2);
 		str3 = p2.distance(p);
@@ -142,25 +142,25 @@ class Triangle2D {
 		s = (str1 + str2 + str3) / 2;
 		double povrsina = Math.sqrt(s*(s - str1)*(s - str2)*(s - str3)); // povrsina originalnog trougla
 		
-		/** Ako je po formuli povrsina tri trougla za unesene
-		 * tacke manje ili jednaka povrsini originalnog trougla */
+		/* Ako je po formuli povrsina tri trougla za unesene tacke manje ili
+		 * jednaka povrsini originalnog trougla, vraca true, ako nije vraca false */
 		if((a1 + a2 + a3) <= povrsina) {
-			return true;                                              // vraca true
-		} else {                                                      // a ako se ne nalaze
-			return false;                                             // vraca false
+			return true;
+		} else {
+			return false;
 		}
 	}
 	
 	/** Metoda koja provjerava da li se uneseni
 	 * trougao nalazi u originalnom trouglu */
 	public boolean contains(Triangle2D t){
-		                  // ako se nalazi
+		/* Po formuli ako je uslov ispunjen, vraca true, ako nije vraca false */
 		if((contains(t.getP1()) && contains(t.getP2()) && contains(t.getP3()))) {
 			System.out.println("Uneseni trougao se nalazi u drugom trouglu.");
-			return true;  // ispis u konzolu, vraca true
+			return true;
 		} else {
 			System.out.println("Uneseni trougao se ne nalazi u drugom trouglu.");
-			return false; // ispis u konzolu, vraca false
+			return false;
 		}
 	}
 }
