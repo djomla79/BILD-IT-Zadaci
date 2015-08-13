@@ -84,7 +84,7 @@ public double[] getIntersectingPoint() {
 	b[0] = (y1 - y2)*x1 - (x1 - x2)*y1;   // racunanje tacaka po formuli
 	b[1] = (y3 - y4)*x3 - (x3 - x4)*y3;
 	
-	return linearEquation(a, b);              // vraca linear equation za izracunatu matricu i tacke
+	return linearEquation(a, b);          // vraca linear equation za izracunatu matricu i tacke
 }
 /** Metoda koja prima matricu i niz elem. i vraca niz sa izracunatim vrijednostima */
 public double[] linearEquation(double a[][], double b[]) {
