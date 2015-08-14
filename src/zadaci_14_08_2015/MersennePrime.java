@@ -10,8 +10,6 @@ public class MersennePrime {
 		 in the form 2p - 1 for some positive integer p. Write a program that finds
 		 all Mersenne primes with p … 100 and displays the output as shown below.
 		 */
-		String maxLong = "" + Long.MAX_VALUE;
-		BigInteger max = new BigInteger(maxLong);
 		
 		System.out.println("Prime - Mersenne");
 		
