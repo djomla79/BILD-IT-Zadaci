@@ -29,10 +29,10 @@ public class ArrayIndexOutOfBoundsEx {
 					niz[i] = (int)(Math.random()*2);        // unos brojeva u niz
 				}
 				
-				System.out.print("Unesite indeks niza: ");
+				System.out.print("Unesite index niza: ");
 				index = input.nextInt();                    // unos indexa
 				                                            // ispis u konzolu
-				System.out.println("Element niza sa indeksom " + index + " je: " + niz[index]);
+				System.out.println("Element niza sa index-om " + index + " je: " + niz[index]);
 				
 				isOn = false;                               // uslov ispunjen, prekid rada petlje
 				

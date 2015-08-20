@@ -13,7 +13,7 @@ public class MismatchException {
 
 		Scanner input = new Scanner(System.in);
 		
-		boolean nastaviUnos = true;
+		boolean isOn = true;
 		
 		/** Ako unos nije cijeli broj,
 		 * ispis greske i vrsi se unos ponovo */
@@ -29,7 +29,7 @@ public class MismatchException {
 			                                     // ispis sume
 			System.out.println("Suma unesenih brojeva je: " + suma);
 			
-			nastaviUnos = false;                 // uslov ispunjen, prekid rada petlje
+			isOn = false;                 // uslov ispunjen, prekid rada petlje
 			
 		    } catch(InputMismatchException ex) { // 'hvatanje' greske
 		    	
@@ -38,7 +38,7 @@ public class MismatchException {
 			   
 		   }
 			
-		} while(nastaviUnos);                    // petlja radi dok se uslov ne ispuni
+		} while(isOn);                    // petlja radi dok se uslov ne ispuni
 		input.close();
 		
 	}
