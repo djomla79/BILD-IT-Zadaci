@@ -22,52 +22,52 @@ public class CreateLargeDataset {
 		 FirstName1 LastName1 assistant 60055.95
 		 FirstName2 LastName2 associate 81112.45
 		 . . .
-		 FirstName1000 LastName1000 full 92255.21 
+		 FirstName1000 LastName1000 full 92255.21
 		 */
 		
 		String file = "Salary.txt";
 		
-		PrintWriter upis = new PrintWriter(file);
+		PrintWriter upis = new PrintWriter(file);                // kreiranje novog fajla imena Salary.txt
 		
 		int[] niz = new int[1000];
 		String[] rank = {"assistant", "associate", "professor"};
 		
 		double salary = 0;
 		
-		Random random = new Random();
+		Random random = new Random();                            // kreiranje objekta random
 		int b50 = 50000, b60 = 60000, b75 = 75000, b80 = 80000, b110 = 110000, b130 = 130000;
 		
-		for(int i=0; i<niz.length; i++) {
+		for(int i=0; i<niz.length; i++) {                        // za sve el. niza
 				
 			String s = "";
-			
+			                                                     // upis u fajl ime, prezime, nasumicno gen. rank
 			upis.print("Ime" + (i+1) + " Prezime" + (i+1) + " " + (s = rank[(int)(Math.random()*3)]));
 			
-			if(s.matches("assistant")) {
-				salary = (double)random.nextInt(b80-b50)+b50;
-			} else if(s.matches("associate")) {
-				salary = (double)random.nextInt(b110-b60)+b60;
-			} else if(s.matches("professor")) {
-				salary = (double)random.nextInt(b130-b75)+b75;
+			if(s.matches("assistant")) {                         // ako string (sa nasumicno gen. rankom) odgovara unosu
+				salary = (double)random.nextInt(b80-b50)+b50;    // plata je random broj izmedju 50k i 80k
+			} else if(s.matches("associate")) {                  // ako string odgovara unosu
+				salary = (double)random.nextInt(b110-b60)+b60;   // plata je random broj izmedju 60k i 110k
+			} else if(s.matches("professor")) {                  // ako string odgovara unosu
+				salary = (double)random.nextInt(b130-b75)+b75;   // plata je random broj izmedju 75k i 130k
 			}
 			
-			upis.print(" " + salary + "\n"); 
+			upis.print(" " + salary + "\n");                     // upis plate u fajl
 		
 		}
 		
 		upis.close();
 		
-		File file1 = new File("Salary.txt");
+		File file1 = new File("Salary.txt");                     // kreiranje objekta file sa fajlom Salary.txt
 		
 		Scanner input = new Scanner(file1);
 		
 		String str = "";
 		
-		while(input.hasNextLine()) {
+		while(input.hasNextLine()) {                             // petlja radi dok u fajlu ima recenica
 			
-			str = input.nextLine();
+			str = input.nextLine();                              // string str postaje recenica iz fajla
 			
-			System.out.println(str);
+			System.out.println(str);                             // ispis recenica iz fajla
 			
 		}
 		

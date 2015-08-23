@@ -11,7 +11,7 @@ public class CountWordsFromAddress {
 	public static void main(String[] args) {
 		/*
 		 Write a program that counts the number of words in President Abraham Lincoln’s
-		 Gettysburg address from http://cs.armstrong.edu/liang/data/ Lincoln.txt. 
+		 Gettysburg address from http://cs.armstrong.edu/liang/data/ Lincoln.txt.
 		 */
 		
 		String adresa = "http://cs.armstrong.edu/liang/data/Lincoln.txt";

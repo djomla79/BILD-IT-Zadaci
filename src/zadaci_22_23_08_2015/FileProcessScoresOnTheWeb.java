@@ -13,7 +13,7 @@ public class FileProcessScoresOnTheWeb {
 		 Suppose that the text file on the Web http://cs.armstrong.edu/liang/data/Scores.txt
 		 contains an unspecified number of scores.
 		 Write a program that reads the scores from the file and displays their total and average.
-		 Scores are separated by blanks. 
+		 Scores are separated by blanks.
 		 */
 		
 		String adresa = "http://cs.armstrong.edu/liang/data/Scores.txt";

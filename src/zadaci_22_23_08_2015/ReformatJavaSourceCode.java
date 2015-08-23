@@ -16,7 +16,7 @@ public class ReformatJavaSourceCode {
 		 For example, the following Java source in (a) uses the next-line brace style.
 		 Your program converts it to the end-of-line brace style in (b).
 		 Your program can be invoked from the command line with the Java sourcecode file as the argument.
-		 It converts the Java source code to a new format.
+		 It converts the Java source code to a new format. 
 		 */
 		
 		input = new Scanner(System.in);
