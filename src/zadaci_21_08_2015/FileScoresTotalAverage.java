@@ -32,7 +32,7 @@ public class FileScoresTotalAverage {
 
 		input = new Scanner(file);
 
-		int suma = 0, broj = 0, brojac = 0;;
+		int suma = 0, broj = 0, brojac = 0;
 		
 		while(input.hasNext()) {                // petlja radi dok u fajlu postoji prazno polje izmedju elem.
 

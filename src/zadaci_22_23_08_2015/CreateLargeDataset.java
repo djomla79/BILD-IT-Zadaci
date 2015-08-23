@@ -22,7 +22,7 @@ public class CreateLargeDataset {
 		 FirstName1 LastName1 assistant 60055.95
 		 FirstName2 LastName2 associate 81112.45
 		 . . .
-		 FirstName1000 LastName1000 full 92255.21
+		 FirstName1000 LastName1000 full 92255.21 
 		 */
 		
 		String file = "Salary.txt";

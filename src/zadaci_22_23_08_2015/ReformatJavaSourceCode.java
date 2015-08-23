@@ -38,7 +38,7 @@ public class ReformatJavaSourceCode {
 				
 				while(input.hasNextLine()) {         // petlja radi dok ima recenica u fajlu
 					
-					str = input.nextLine();          // stringu str se dodjeljuju recenice iz fajla
+					str += input.nextLine();          // stringu str se dodjeljuju recenice iz fajla
 					
 				    /* str1 postaje string str kojem su izmjenjeni odredjeni 
 				     * dijelovi stringa sa unesenim zeljenim dijelom stringa */
