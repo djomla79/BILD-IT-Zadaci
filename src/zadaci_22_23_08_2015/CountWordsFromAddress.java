@@ -24,12 +24,14 @@ public class CountWordsFromAddress {
 			
 			int brojac = 0;
 			
+			//System.out.print("Text: \n");           // (moze se odkomentarisati ako cemo ispisati text iz fajla)
+			
 			while(input.hasNext()) {                  // petlja radi dok u fajlu ima space polja
 				
 				String rijeci = input.next();         // rijeci iz texta postaju string rijeci
 				brojac++;                             // brojac rijeci u textu fajla
-				                                      // ispis rijeci u konzolu
-				System.out.print("Rijeci iz texta: " + rijeci);
+				
+				System.out.print(rijeci + " ");       // ispis rijeci u konzolu (moze se staviti kao komentar ako je text veliki)
 				
 			}
 			                                          // broj rijeci u textu fajla
