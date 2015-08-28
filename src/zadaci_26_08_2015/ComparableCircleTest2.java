@@ -14,7 +14,7 @@ public class ComparableCircleTest2 {
 		GeometricObject c3 = new Circle(3.0);
 		GeometricObject c4 = new Circle(3.0);
 		
-		/* Pozivanje metode za poredjenje dva kruga i ispis povrsine i obima veceg */
+		/* Pozivanje metode za poredjenje dva kruga i ispis povrsine veceg */
 		System.out.println("Povrsina prvog kruga je: " + c1.getArea());
 		System.out.println("Povrsina drugog kruga je: " + c2.getArea());
 		GeometricObject circleTo = GeometricObject.compare(c1, c2);
@@ -33,7 +33,7 @@ public class ComparableCircleTest2 {
 		
 	}
 }
-/** Klasa Circle */
+/** Klasa Circle koja extenda GO */
 class Circle extends GeometricObject {
 	
 	double radius;
@@ -57,7 +57,7 @@ class Circle extends GeometricObject {
 		return "Povrsina kruga (radius: " + radius + ") je " + getArea();
 	}
 }
-/** Abstraktna klasa GeometricObject */
+/** Abstraktna klasa GeometricObject koja implementira Comparable */
 abstract class GeometricObject implements Comparable<GeometricObject> {
 	
 	/** Prazan konstruktor */

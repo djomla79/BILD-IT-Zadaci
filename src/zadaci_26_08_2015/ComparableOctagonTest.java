@@ -23,14 +23,14 @@ public class ComparableOctagonTest {
 		if (o1.compareTo(o2) == 0) {
 			System.out.println("Oktagoni su jednaki.");
 		} else if (o1.compareTo(o2) > 0) {
-			System.out.println("Povrsina veceg kruga je: " + o1.getArea());
+			System.out.println("Povrsina veceg oktagona je: " + o1.getArea());
 		} else {
-			System.out.println("Povrsina veceg kruga je: " + o2.getArea());
+			System.out.println("Povrsina veceg oktagona je: " + o2.getArea());
 		}
 		
 	}
 }
-/** Klasa Octagonal extenda GO koji implementira Cloneable */
+/** Klasa Octagon extenda GO koji implementira Cloneable */
 class Octagon extends GeometricObject implements Cloneable {
 	
 	protected double side;

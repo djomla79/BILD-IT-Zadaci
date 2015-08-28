@@ -15,7 +15,7 @@ public class ComparableRectangleTest {
 		GeometricObject r3 = new Rectangle(10.0, 10.0);
 		GeometricObject r4 = new Rectangle(10.0, 10.0);
 		
-		/* Pozivanje metode za poredjenje dva pravougaonika i ispis povrsine i obima veceg */
+		/* Pozivanje metode za poredjenje dva pravougaonika i ispis povrsine veceg */
 		GeometricObject rectangleTo = GeometricObject.compare(r1, r2);
 		
 		System.out.println("Povrsina prvog pravougaonika je: " + r1.getArea());

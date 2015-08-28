@@ -11,7 +11,7 @@ public class SumOfTheAreasOfGeometricObjects {
 		
 		Write a test program that creates an array of four objects
 		(two circles and two rectangles)
-		and computes their total area using the sumArea method.
+		and computes their total area using the sumArea method. 
 		 */
 		
 		/** Kreiranje niza objekata GeometricObject */
